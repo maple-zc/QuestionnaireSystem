@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建问卷</title>
+    <link rel="stylesheet" href="css/new-built.css">
+    <style>
+        .deleteBtn {
+            margin-right: 10px;
+            padding: 0 5px;
+            cursor: pointer;
+            border-style: none;
+            border-radius: 50%;
+            background-color: #DDD;
+        }
+
+        .deleteBtn:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="logo">
+                <img src="../resources/logo.png" alt="logo">
+                <h4 id="welcome">欢迎使用问卷调查系统</h4>
+            </div>
+            <div id="signed">
+                <ul>
+                    <li id="user">
+                        <img src="../resources/user_img.jpg" alt="user_img">
+                        <p class="dropdown-content">
+                            <a href="../index_nolog.html">退出</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span id="username">用户名</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="quesInfo">
+                <form>
+                    <div class="ques-title">
+                        <input type="text" placeholder="输入标题...">
+                    </div>
+                </form>
+                <div id="hint">
+                    <h4>请点击按钮创建新问卷</h4>
+                </div>
+                <ol>
+                    
+                </ol>
+                <div class="selection">
+                    <span class="single" id="single-zc">+ 单选</span>
+                    <span class="multiple" id="multiple-zc">+ 多选</span>
+                    <span class="filling" id="filling-zc">+ 问答</span>
+                </div>
+                <div id="btn">
+                    <button id="save">保存</button>
+                    <a href="../index_log.html"><button id="return">返回</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="js/new-built.js"></script>
+
+</body>
+
+</html>

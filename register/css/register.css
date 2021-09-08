@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.26);
+  background-image: url(../../resources/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: 1200px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 500px;
+  border-style: none;
+  border-radius: 20px;
+  margin: 80px auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.container .login {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.container .login form div {
+  margin-top: 10px;
+}
+
+.container .login form div label {
+  font-size: large;
+}
+
+.container .login form .email_input input,
+.container .login form .user_input input,
+.container .login form .pass_input input,
+.container .login form .pass_input_confirm input {
+  height: 40px;
+  width: 320px;
+  border-radius: 5px;
+  border-style: solid;
+  outline: none;
+  padding-left: 5px;
+}
+
+.green{
+  border-color: rgb(0, 192, 0);
+}
+
+.red{
+  border-color: red;
+}
+
+.container .login form .btn {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.container .login form .btn button {
+  font-size: 15px;
+  padding: 6px 60px;
+  background-color: rgb(21, 174, 235);
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  letter-spacing: 7px;
+}
+
+.container .login form .btn button:hover {
+  background-color: rgba(77, 194, 240, 0.788);
+}
+
+.container .login .logbtn {
+  margin: 10px auto;
+  text-decoration: none;
+  font-size: large;
+  color: rgb(107, 107, 107);
+}
+
+.container .login .logbtn:hover {
+  color: black;
+}
+
+.container .success{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 150px auto;
+}
+
+.container .success .remind{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container .success .logbtn{
+  text-align: center;
+  text-decoration: none;
+}

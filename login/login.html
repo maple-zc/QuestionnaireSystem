@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="../resources/logo.png" alt="logo">
+        <div class="login">
+            <form action="">
+                <div class="user_input">
+                    <label for="user_id">用户名：</label><br>
+                    <input type="text" id="user_id" placeholder="用户名/ID">
+                    <p id="idErr" style="display: none;color:red"></p>
+                </div>
+                <div class="pass_input">
+                    <label for="user_pass">密码：</label><br>
+                    <input type="password" id="user_pass" placeholder="密码">
+                    <p id="pwdErr" style="display: none;color:red"></p>
+                </div>
+                <div class="btn">
+                    <button type="button" id="submit">登录</button><br>
+                    <a href="../register/register.html">注册</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

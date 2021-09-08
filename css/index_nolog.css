@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  background-image: url(../resources/index_nolog_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1540px) {
+  #container {
+    height: 1010px;
+  }
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 300px;
+  height: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#nav #logo {
+  width: 50%;
+  margin: auto 10px;
+}
+
+#nav #logo img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+
+#nav #logo #welcome {
+  float: left;
+  font-size: 25px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+#nav #signIn {
+  width: 50%;
+  display: inline-block;
+  margin: auto 0;
+}
+
+#nav #signIn ul {
+  list-style: none;
+}
+
+#nav #signIn ul li {
+  float: right;
+  margin-top: 5px;
+}
+
+#nav #signIn #submit a,
+#nav #signIn #register a {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-right: 9px;
+  text-decoration: none;
+}
+
+#nav #signIn #submit a {
+  border-color: rgb(21, 174, 235);
+  background-color: rgb(21, 174, 235);
+  color: azure;
+}
+
+#nav #signIn #submit a:hover {
+  background-color: azure;
+  color: rgb(21, 174, 235);
+}
+
+#nav #signIn #register a {
+  border-color: rgb(21, 174, 235);
+  background-color: azure;
+  color: rgb(21, 174, 235);
+}
+
+#nav #signIn #register a:hover {
+  background-color: rgb(21, 174, 235);
+  color: azure;
+}
+
+#nav #signIn ul #quesmark {
+  vertical-align: middle;
+  margin-right: 6px;
+  position: relative;
+  display: inline-block;
+}
+
+#nav #signIn ul li img {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+}
+
+#wrapper {
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#wrapper table {
+  margin: 130px auto;
+}
+
+#wrapper table caption {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#wrapper table tr td {
+  width: 190px;
+  vertical-align: top;
+}
+
+#wrapper table tr td p {
+  font-size: 20px;
+}
+
+#footer {
+  height: 5%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#footer p {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.459);
+}

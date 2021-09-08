@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>统计结果</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap-grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/analysis.css">
+    <style>
+        .barChart,
+        .pieChart {
+            margin: 0 auto;
+            height: 250px;
+            width: 500px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="logo">
+                <img src="../resources/logo.png" alt="logo">
+                <h4 id="welcome">欢迎使用问卷调查系统</h4>
+            </div>
+            <div id="signed">
+                <ul>
+                    <li id="user">
+                        <img src="../resources/user_img.jpg" alt="user_img">
+                        <p class="dropdown-content">
+                            <a href="../index_nolog.html">退出</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span id="username">用户名</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="echarts">
+            <div id="results">
+                <div class="download_btn">
+                    <button id="download">下载结果</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>在线问卷系统，我们专注于问卷</p>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/analysis.js"></script>
+
+</body>
+
+</html>

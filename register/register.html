@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <form action="">
+                <div class="email_input">
+                    <label for="email-addr">注册邮箱：</label><br>
+                    <input type="email" id="email-addr" placeholder="邮箱地址">
+                    <p id="emailErr" style="display: none;"></p>
+                </div>
+                <div class="user_input">
+                    <label for="user_id">用户名：</label><br>
+                    <input type="text" id="user_id" placeholder="用户名/ID">
+                    <p id="idErr" style="color:green">用户名长度不能少于6个字符，且为英文字母开头</p>
+                </div>
+                <div class="pass_input">
+                    <label for="user_pass">密码：</label><br>
+                    <input type="password" id="user_pass" placeholder="密码">
+                    <p id="pwdErr" style="display: none;"></p>
+                </div>
+                <div class="pass_input_confirm">
+                    <label for="confirm">确认密码：</label><br>
+                    <input type="password" id="confirm" placeholder="确认密码">
+                    <p id="confirmErr" style="display: none;"></p>
+                </div>
+                <div class="btn">
+                    <button id="submit" type="button">提交</button>
+                </div>
+            </form>
+            <a href="../login/login.html" class="logbtn">已注册账号，立即登录</a>
+        </div>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <script src="js/register.js"></script>
+    </div>
+
+</body>
+
+</html>

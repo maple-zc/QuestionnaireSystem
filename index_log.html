@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线问卷系统</title>
+  <link rel="stylesheet" href="./css/index_log.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="nav">
+      <div id="logo">
+        <img src="./resources/logo.png" alt="logo">
+        <h4 id="welcome">欢迎使用问卷调查系统</h4>
+      </div>
+      <div id="signed">
+        <ul>
+          <li id="user">
+            <img src="./resources/user_img.jpg" alt="user_img">
+            <p class="dropdown-content">
+              <a href="index_nolog.html">退出</a>
+            </p>
+          </li>
+          <li>
+            <span id="username">用户名</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="aside">
+        <a href="new-built/new-built.html" id="create">
+          <span>+ 创建问卷</span>
+        </a>
+        <ul>
+          <li>
+            <a href="index_log.html" id="check">查看问卷</a>
+          </li>
+          <li>
+            <a href="#">回收站</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <h2>问卷列表</h2>
+        <ul>
+          
+        </ul>
+        <p class="hint" style="display: none;">现在还没有任何问卷哦!</p>
+      </div>
+    </div>
+    <div id="footer">
+      <p>在线问卷系统，我们专注于问卷</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script type="text/javascript"
+    src="https://www.jq22.com/demo/clipboard.js-master201703170013/dist/clipboard.min.js"></script>
+  <script src="./js/index_log.js"></script>
+
+</body>
+
+</html>

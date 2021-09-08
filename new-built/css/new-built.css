@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+}
+
+@media screen and (min-width: 1540px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 1010px;
+  }
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 300px;
+  height: 5%;
+  background-color: rgba(224, 224, 224);
+}
+
+#nav #logo {
+  width: 50%;
+  margin: auto 10px;
+}
+
+#nav #logo img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+
+#nav #logo #welcome {
+  float: left;
+  font-size: 25px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+#nav #signed {
+  width: 50%;
+  display: inline-block;
+}
+
+#nav #signed ul {
+  list-style: none;
+}
+
+#nav #signed ul li {
+  margin-top: 5px;
+  margin-left: 10px;
+  float: right;
+}
+
+#nav #signed img {
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  width: 23px;
+  height: 23px;
+}
+
+#nav #signed ul #user .dropdown-content {
+  position: absolute;
+  background-color: rgb(219, 219, 219);
+  width: 35px;
+  display: none;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+}
+
+#nav #signed ul #user:hover .dropdown-content {
+  display: block;
+}
+
+#nav #signed ul #user .dropdown-content a {
+  text-decoration: none;
+  color: black;
+}
+
+#wrapper {
+  margin: 20px 100px;
+}
+
+#wrapper #quesInfo {
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 660px;
+}
+
+@media screen and (min-width: 1540px) {
+  #wrapper #quesInfo {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 1010px;
+  }
+}
+
+#wrapper #quesInfo .ques-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#wrapper #quesInfo form .ques-title input {
+  width: 70%;
+  height: 40px;
+  font-size: medium;
+  padding: 0 10px;
+  border-radius: 5px;
+  border-style: solid;
+  outline: none;
+}
+
+#wrapper #quesInfo #hint {
+  height: 70%;
+  width: 100%;
+  text-align: center;
+}
+
+#wrapper #quesInfo #hint h4 {
+  margin-top: 60px;
+  color: rgb(192, 192, 192);
+  font-size: larger;
+}
+
+#wrapper #quesInfo ol {
+  width: 100%;
+  list-style-type: none;
+  counter-reset: section;
+  height: 100%;
+  margin-top: 20px;
+}
+
+#wrapper #quesInfo ol li {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 8px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+#wrapper #quesInfo ol li:focus {
+  background-color: rgb(235, 235, 235);
+}
+
+#wrapper #quesInfo ol li form .head-title {
+  height: 30%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#wrapper #quesInfo ol li form .head-title span {
+  display: inline-block;
+  width: 500px;
+  word-break: break-all;
+}
+
+#wrapper #quesInfo ol li form .head-title::before {
+  counter-increment: section;
+  content: counter(section) "、";
+}
+
+#wrapper #quesInfo ol li form .content {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid;
+  border-color: rgb(204, 204, 204);
+}
+
+#wrapper #quesInfo ol li form .content .add {
+  height: 10%;
+}
+
+#wrapper #quesInfo ol li form .content .add span {
+  float: right;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 40px;
+  padding: 2px 5px;
+  font-size: small;
+}
+
+#wrapper #quesInfo ol li form .content .add span:hover {
+  background-color: rgb(211, 211, 211);
+  border-color: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+#wrapper #quesInfo ol li form .content .single-option,
+#wrapper #quesInfo ol li form .content .multiple-option {
+  margin: 10px 45px;
+}
+
+#wrapper #quesInfo ol li form .content .single-option .option,
+#wrapper #quesInfo ol li form .content .multiple-option .option {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+#wrapper #quesInfo ol li form .content .single-option .option p,
+#wrapper #quesInfo ol li form .content .multiple-option .option p {
+  display: inline-block;
+  margin-left: 6px;
+  width: 400px;
+  word-break: break-all;
+  line-height: 15px;
+}
+
+#wrapper #quesInfo ol li form .content .single-option .option span,
+#wrapper #quesInfo ol li form .content .multiple-option .option span {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  margin-left: 40px;
+}
+
+#wrapper #quesInfo ol li form .content textarea {
+  width: 90%;
+  height: 70px;
+  resize: none;
+  margin: 15px auto;
+}
+
+#wrapper #quesInfo .selection {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  width: 90%;
+}
+
+#wrapper #quesInfo .selection span {
+  text-align: center;
+  width: 33%;
+  margin: 20px 40px;
+  padding: 5px 0;
+}
+
+#wrapper #quesInfo .selection span:hover {
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(2, 176, 219);
+  color: azure;
+  cursor: pointer;
+}
+
+#wrapper #quesInfo #btn {
+  width: 100%;
+  text-align: center;
+}
+
+#wrapper #quesInfo #btn #save,
+#wrapper #quesInfo #btn #return {
+  margin: 70px 10px;
+  padding: 3px 9px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: medium;
+}
+
+#wrapper #quesInfo #btn #save {
+  background-color: #999;
+  /* color: white; */
+}
+
+#wrapper #quesInfo #btn #save:hover {
+  background-color: white;
+  /* color: black; */
+  cursor: pointer;
+}
+
+#wrapper #quesInfo #btn #return {
+  background-color: white;
+  color: black;
+}
+
+#wrapper #quesInfo #btn #return:hover {
+  background-color: #999;
+  color: white;
+  cursor: pointer;
+}

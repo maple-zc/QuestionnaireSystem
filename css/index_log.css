@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+}
+
+@media screen and (min-width: 1540px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 1010px;
+  }
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 300px;
+  height: 5%;
+}
+
+#nav #logo {
+  width: 50%;
+  margin: auto 10px;
+}
+
+#nav #logo img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+
+#nav #logo #welcome {
+  float: left;
+  font-size: 25px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+#nav #signIn {
+  width: 50%;
+  display: inline-block;
+  margin: auto 0;
+}
+
+#nav #signIn ul {
+  list-style: none;
+}
+
+#nav #signIn ul li {
+  float: right;
+  margin-top: 5px;
+}
+
+#nav #signIn #submit a,
+#nav #signIn #register a {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-right: 9px;
+  text-decoration: none;
+}
+
+#nav #signIn #submit a {
+  border-color: rgb(21, 174, 235);
+  background-color: rgb(21, 174, 235);
+  color: azure;
+}
+
+#nav #signIn #submit a:hover {
+  background-color: azure;
+  color: rgb(21, 174, 235);
+}
+
+#nav #signIn #register a {
+  border-color: rgb(21, 174, 235);
+  background-color: azure;
+  color: rgb(21, 174, 235);
+}
+
+#nav #signIn #register a:hover {
+  background-color: rgb(21, 174, 235);
+  color: azure;
+}
+
+#nav #signIn ul #quesmark {
+  vertical-align: middle;
+  margin-right: 6px;
+  position: relative;
+  display: inline-block;
+}
+
+#nav #signIn ul li img {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+}
+
+#nav #signed {
+  width: 50%;
+  display: inline-block;
+}
+
+#nav #signed ul {
+  list-style: none;
+}
+
+#nav #signed ul li {
+  margin-top: 5px;
+  margin-left: 10px;
+  float: right;
+}
+
+#nav #signed img {
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  width: 23px;
+  height: 23px;
+}
+
+#nav #signed ul #user .dropdown-content {
+  position: absolute;
+  background-color: rgb(219, 219, 219);
+  width: 35px;
+  display: none;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+}
+
+#nav #signed ul #user:hover .dropdown-content {
+  display: block;
+}
+
+#nav #signed ul #user .dropdown-content a {
+  text-decoration: none;
+  color: black;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+#wrapper #aside {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+#wrapper #aside #create {
+  background-color: rgb(16, 134, 245);
+  text-decoration: none;
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 70px;
+  padding: 20px 60px;
+  color: azure;
+}
+
+#wrapper #aside #create:hover {
+  background-color: rgb(105, 178, 247);
+}
+
+#wrapper #aside ul {
+  list-style-type: none;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+#wrapper #aside ul li {
+  list-style: none;
+}
+
+#wrapper #aside ul li a {
+  display: block;
+  padding: 15px 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  width: 170px;
+}
+
+#wrapper #aside ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+#wrapper #aside ul li #check {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+#wrapper #aside ul li #check:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+#wrapper #content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#wrapper #content h2 {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#wrapper #content ul {
+  margin: 30px 30px;
+  list-style-type: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 90%;
+}
+
+#wrapper #content .hint {
+  margin: 30% 30%;
+  color: rgb(131, 131, 131);
+}
+
+#wrapper #content ul li {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  width: 90%;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+#wrapper #content ul li .upper {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#wrapper #content ul li .upper .name {
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  font-size: larger;
+  height: 50%;
+  width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+#wrapper #content ul li .upper .name:hover {
+  color: rgb(40, 160, 207);
+}
+
+#wrapper #content ul li .upper .link {
+  margin-right: 30px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 2px 7px;
+  background-color: rgb(230, 230, 230);
+}
+
+#wrapper #content ul li .upper .link:hover {
+  background-color: rgb(105, 178, 247);
+  color: white;
+  cursor: pointer;
+}
+
+#wrapper #content ul li p {
+  height: 40%;
+  border-top: 1px solid;
+  border-color: rgb(211, 211, 211);
+}
+
+#wrapper #content ul li p span {
+  float: right;
+  margin: 10px 10px;
+  color: rgba(0, 0, 0, 0.466);
+}
+
+#wrapper #content ul li p .nopublish,
+#wrapper #content ul li p .published,
+#wrapper #content ul li p .completed {
+  float: left;
+  margin-left: 20px;
+}
+
+#wrapper #content ul li p .publishedColor {
+  color: rgb(238, 131, 31);
+}
+
+#wrapper #content ul li p .delete:hover,
+#wrapper #content ul li p .publish:hover,
+#wrapper #content ul li p .analysis:hover,
+#wrapper #content ul li p .stop:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#footer {
+  height: 5%;
+  text-align: center;
+}
+
+#footer p {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.459);
+}
